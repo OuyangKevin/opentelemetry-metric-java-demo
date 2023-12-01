@@ -1,4 +1,4 @@
-# opentelemetry-metric-prometheus
+# OpenTelemetry-metric-prometheus
 this example show how OpenTelemetry metric export as Prometheus works
 
 # start application
