@@ -1,0 +1,4 @@
+server:
+  port: 8086 # server port
+prometheus:
+  port: 1000 #prometheus metric exporter port

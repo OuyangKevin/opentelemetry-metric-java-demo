@@ -1,0 +1,10 @@
+server:
+  port: 8083 # Server Port
+
+otel:
+  exporter:
+    otlp:
+      endpoint: http://127.0.0.1:4317
+      authentication: 123456 # aliyun prometheus authentication
+
+

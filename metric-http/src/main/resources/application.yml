@@ -1,0 +1,6 @@
+server:
+  port: 8085 # server port
+otel:
+  exporter:
+    otlp:
+      endpoint: http://127.0.0.1:55681/v1/metrics
