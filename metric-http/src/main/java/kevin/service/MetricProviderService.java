@@ -113,6 +113,7 @@ public class MetricProviderService {
                                 .setAggregationTemporalitySelector(aggregationTemporalitySelector)
                                 .setEndpoint(endpoint)
                                 .setCompression("gzip")
+                                .addHeader("metricNamespace","ot")
                                 .build())
                         .setInterval(15, TimeUnit.SECONDS).build())
                 .setResource(resource)

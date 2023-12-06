@@ -118,6 +118,7 @@ public class MetricProviderService {
                                 .setEndpoint(endpoint)
                                 .setCompression("gzip")
                                 .addHeader(MetricConstants.AUTHENTICATION,authentication)
+                                .addHeader("metricNamespace","ot")
                                 .build())
                         .setInterval(15, TimeUnit.SECONDS).build())
                 .setResource(resource)
