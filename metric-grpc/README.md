@@ -34,3 +34,13 @@ OtlpGrpcMetricExporter.builder()
    .build()
 ```
 for example if you set metricNamespace = ot, all you metric name will add "ot_" prefix
+
+(4) After the OpenTelemetry metrics are reported to Alibaba Cloud Prometheus, all metrics will be prefixed with the OpenTelemetry Scope Label by default,if you want to skip please add Header "skipGlobalLabel"
+```
+OtlpGrpcMetricExporter.builder()
+  .setEndpoint("******")
+  .setCompression("gzip")
+  .addHeader("Authentication","******")
+  .addHeader("skipGlobalLabel","true")
+  .build()
+```
